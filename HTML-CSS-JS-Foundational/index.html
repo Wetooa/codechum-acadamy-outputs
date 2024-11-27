@@ -1,372 +1,479 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XMuse - Christmas Sale | Promo</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>XMuse - Christmas Sale | Promo</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
 
-  <link rel="stylesheet" href="styles/base.css" />
-  <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
 
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+  </head>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-</head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a class="anchor-tag" id="first-a" href="#first">
+            <span class="anchor-tag-text"> Home </span>
+            <img src="./images/menu_item_normal.png" alt="menu-item" />
+          </a>
+        </li>
+        <li>
+          <a class="anchor-tag" id="second-a" href="#second">
+            <span class="anchor-tag-text"> Our Offer </span>
+            <img src="./images/menu_item_normal.png" alt="menu-item" />
+          </a>
+        </li>
+        <li>
+          <a class="anchor-tag" id="third-a" href="#third">
+            <span class="anchor-tag-text"> About Offer </span>
+            <img src="./images/menu_item_normal.png" alt="menu-item" />
+          </a>
+        </li>
+        <li>
+          <a class="anchor-tag" id="fourth-a" href="#fourth">
+            <span class="anchor-tag-text"> About Product #1 </span>
+            <img src="./images/menu_item_normal.png" alt="menu-item" />
+          </a>
+        </li>
+        <li>
+          <a class="anchor-tag" id="fifth-a" href="#fifth">
+            <span class="anchor-tag-text"> About Product #2 </span>
+            <img src="./images/menu_item_normal.png" alt="menu-item" />
+          </a>
+        </li>
+        <li>
+          <a class="anchor-tag" id="sixth-a" href="#sixth">
+            <span class="anchor-tag-text"> About Product #3 </span>
+            <img src="./images/menu_item_normal.png" alt="menu-item" />
+          </a>
+        </li>
+        <li>
+          <a class="anchor-tag" id="seventh-a" href="#seventh">
+            <span class="anchor-tag-text"> Subscribe </span>
+            <img src="./images/menu_item_normal.png" alt="menu-item" />
+          </a>
+        </li>
+        <li>
+          <a class="anchor-tag" id="eighth-a" href="#eighth">
+            <span class="anchor-tag-text"> Interested? </span>
+            <img src="./images/menu_item_normal.png" alt="menu-item" />
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-<body>
-
-  <nav>
-    <ul>
-      <li>
-        <a class="anchor-tag" id="first-a" href="#first">
-          <span class="anchor-tag-text">
-            Home
-          </span>
-          <img src="./images/menu_item_normal.png" alt="menu-item"> </a>
-      </li>
-      <li>
-        <a class="anchor-tag" id="second-a" href="#second">
-          <span class="anchor-tag-text">
-            Our Offer
-          </span>
-          <img src="./images/menu_item_normal.png" alt="menu-item"> </a>
-      </li>
-      <li>
-        <a class="anchor-tag" id="third-a" href="#third">
-          <span class="anchor-tag-text">
-            About Offer
-          </span>
-          <img src="./images/menu_item_normal.png" alt="menu-item"> </a>
-      </li>
-      <li>
-        <a class="anchor-tag" id="fourth-a" href="#fourth">
-          <span class="anchor-tag-text">
-            About Product #1
-          </span>
-          <img src="./images/menu_item_normal.png" alt="menu-item"> </a>
-      </li>
-      <li>
-        <a class="anchor-tag" id="fifth-a" href="#fifth">
-          <span class="anchor-tag-text">
-            About Product #2
-          </span>
-          <img src="./images/menu_item_normal.png" alt="menu-item"> </a>
-      </li>
-      <li>
-        <a class="anchor-tag" id="sixth-a" href="#sixth">
-          <span class="anchor-tag-text">
-            About Product #3
-          </span>
-          <img src="./images/menu_item_normal.png" alt="menu-item"> </a>
-      </li>
-      <li>
-        <a class="anchor-tag" id="seventh-a" href="#seventh">
-          <span class="anchor-tag-text">
-            Subscribe
-          </span>
-          <img src="./images/menu_item_normal.png" alt="menu-item"> </a>
-      </li>
-      <li>
-        <a class="anchor-tag" id="eighth-a" href="#eighth">
-          <span class="anchor-tag-text">
-            Interested?
-          </span>
-          <img src="./images/menu_item_normal.png" alt="menu-item"> </a>
-      </li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="first">
-      <div class="section-content">
-        <h2 class="header-christmas">Christmas</h2>
-        <h1 class="header-sale">SALE</h1>
-        <img src="./images/divider_white.png" alt="">
-        <h3 class="header-clearance">CLEARANCE UP TO</h3>
-        <h2 class="header-off">70% OFF</h2>
-        <img src="./images/divider_white.png" alt="">
-        <button class="learn-more-button">
-          <h5>
-            LEARN MORE
-          </h5>
-        </button>
-        <img src="./images/icon.png" alt="" />
-      </div>
-
-      <img class="red-blink" src="./images/red_blink2.png" alt="red-blink" />
-      <div class="snow-pattern-1"></div>
-      <div class="snow-pattern-2"></div>
-      <img class="reindeer-image-1" src="./images/pic_02.png" alt="reindeer-image-1" />
-      <img class="reindeer-image-2" src="./images/pic_01.png" alt="reindeer-image-2" />
-    </section>
-
-    <section id="second">
-      <div class="section-content">
-        <h4 class="section-title odd-section-title">OUR HOT OFFER</h4>
-        <img src="./images/divider_green.png" alt="">
-        <p class="odd-section-caption">Check out our deals on limited products and make your loved ones happy!</p>
-
-        <div class="offers-container">
-          <div class="offer-container">
-            <img class="offer-product" src="./images/product_01_thumb.png" alt="">
-            <p class="offer-name">
-              SMARPHON 5C 16GB
-            </p>
-            <h5 class="offer-price">$59.60</h5>
-            <button class="offer-buy-now">
-              <h5>
-                BUY NOW
-              </h5>
-            </button>
-          </div>
-          <div class="offer-container">
-            <img class="offer-product" src="./images/product_02_thumb.png" alt="">
-            <p class="offer-name">
-              MAKBOOK PRO 13"
-            </p>
-            <h5 class="offer-price">$99.50</h5>
-            <button class="offer-buy-now">
-              <h5>
-                BUY NOW
-              </h5>
-            </button>
-          </div>
-          <div class="offer-container">
-            <img class="offer-product" src="./images/product_03_thumb.png" alt="">
-            <p class="offer-name">IMAK 27"</p>
-            <h5 class="offer-price">$129.50</h5>
-            <button class="offer-buy-now">
-              <h5>
-                BUY NOW
-              </h5>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="odd-section-trees"></div>
-      <div class="odd-section-footer"></div>
-    </section>
-
-    <section id="third">
-      <div class="section-content">
-        <h4 class="section-title">PROMO VIDEO</h4>
-        <img src="./images/divider_white.png" alt="divider-white">
-        <p class="section-caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat quae, magni iure
-          eum
-          officiis, qui </p>
-
-        <iframe src="./video/sample.mp4" title="Dummy Video" frameborder="0" allowfullscreen></iframe>
-      </div>
-
-      <img class="red-blink" src="./images/red_blink2.png" alt="red-blink" />
-      <div class="snow-pattern-1"></div>
-      <div class="snow-pattern-2"></div>
-      <img class="reindeer-image-1" src="./images/pic_02.png" alt="reindeer-image-1" />
-      <img class="reindeer-image-2" src="./images/pic_01.png" alt="reindeer-image-2" />
-    </section>
-
-    <section id="fourth">
-      <div class="section-content">
-        <h4 class="section-title odd-section-title">ABOUT PRODUCT #1</h4>
-        <img src="./images/divider_green.png" alt="">
-        <p class="odd-section-caption">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-
-        <div class="about-product-img-container">
-          <img class="about-product-img" src="./images/product_01_preview_01.jpg" alt="product-01-preview-01">
-          <img class="about-product-img" src="./images/product_01_preview_02.jpg" alt="product-01-preview-02">
-          <img class="about-product-img" src="./images/product_01_preview_03.jpg" alt="product-01-preview-03">
-        </div>
-
-        <div class="about-product-caption">
-          <p class="about-product-desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dolore, tenetur rerum accusamus qui
-            molestiae!
-            Cupiditate sed magnam distinctio ex obcaecati eius incidunt beatae et autem minus deleniti reiciendis
-            ducimus
-            facilis fugiat harum, ullam laborum suscipit porro nam iste. Alias perferendis quibusdam possimus dolore
-            odio
-            sed tempore dolorum nemo quasi!
-          </p>
-          <div class="offer-price-about">
-            <h6>
-              $59.50
-            </h6>
-            <button class="offer-buy-now">
-              <h5>
-                BUY NOW</h5>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="odd-section-trees"></div>
-      <div class="odd-section-footer"></div>
-    </section>
-
-    <section id="fifth">
-      <div class="section-content">
-        <h4 class="section-title">ABOUT PRODUCT #2</h4>
-        <img src="./images/divider_green.png" alt="divider-green">
-        <p class="section-caption">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-
-        <div class="about-product-img-container">
-          <img class="about-product-img" src="./images/product_01_preview_01.jpg" alt="product-01-preview-01">
-          <img class="about-product-img" src="./images/product_01_preview_02.jpg" alt="product-01-preview-02">
-          <img class="about-product-img" src="./images/product_01_preview_03.jpg" alt="product-01-preview-03">
-        </div>
-
-        <div class="about-product-caption">
-          <p class="about-product-desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dolore, tenetur rerum accusamus qui
-            molestiae!
-            Cupiditate sed magnam distinctio ex obcaecati eius incidunt beatae et autem minus deleniti reiciendis
-            ducimus
-            facilis fugiat harum, ullam laborum suscipit porro nam iste. Alias perferendis quibusdam possimus dolore
-            odio
-            sed tempore dolorum nemo quasi!
-          </p>
-          <div class="offer-price-about">
-            <h6>
-              $59.50
-            </h6>
-            <button class="offer-buy-now">
-              <h5>
-                BUY NOW</h5>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <img class="red-blink" src="./images/red_blink2.png" alt="red-blink" />
-      <div class="snow-pattern-1"></div>
-      <div class="snow-pattern-2"></div>
-      <img class="reindeer-image-1" src="./images/pic_02.png" alt="reindeer-image-1" />
-      <img class="reindeer-image-2" src="./images/pic_01.png" alt="reindeer-image-2" />
-    </section>
-
-    <section id="sixth">
-      <div class="section-content">
-        <h4 class="section-title">ABOUT PRODUCT #3</h4>
-        <img src="./images/divider_green.png" alt="divider-green">
-        <p class="section-caption">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-
-        <div class="about-product-img-container">
-          <img class="about-product-img" src="./images/product_01_preview_01.jpg" alt="product-01-preview-01">
-          <img class="about-product-img" src="./images/product_01_preview_02.jpg" alt="product-01-preview-02">
-          <img class="about-product-img" src="./images/product_01_preview_03.jpg" alt="product-01-preview-03">
-        </div>
-
-        <div class="about-product-caption">
-          <p class="about-product-desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet dolore, tenetur rerum accusamus qui
-            molestiae!
-            Cupiditate sed magnam distinctio ex obcaecati eius incidunt beatae et autem minus deleniti reiciendis
-            ducimus
-            facilis fugiat harum, ullam laborum suscipit porro nam iste. Alias perferendis quibusdam possimus dolore
-            odio
-            sed tempore dolorum nemo quasi!
-          </p>
-          <div class="offer-price-about">
-            <h6>
-              $59.50
-            </h6>
-            <button class="offer-buy-now">
-              <h5>
-                BUY NOW
-              </h5>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="odd-section-trees"></div>
-      <div class="odd-section-footer"></div>
-    </section>
-
-
-    <section id="seventh">
-      <div class="section-content">
-        <h4 class="section-title">WANT MORE? SUBSCRIBE!</h4>
-        <img src="./images/divider_white.png" alt="divider-white">
-        <p class="section-caption">And get latest amazing offers first</p>
-
-        <form action="">
-          <input type="text" placeholder="Enter Name">
-          <input type="email" placeholder="Enter Email">
-          <button class="offer-buy-now">
-            <h5>
-              Submit
-            </h5>
+    <main>
+      <section id="first">
+        <header class="section-content">
+          <h2 class="header-christmas">Christmas</h2>
+          <h1 class="header-sale">SALE</h1>
+          <img src="./images/divider_white.png" alt="divider-white" />
+          <h3 class="header-clearance">CLEARANCE UP TO</h3>
+          <h2 class="header-off">70% OFF</h2>
+          <img src="./images/divider_white.png" alt="divider-white" />
+          <button class="learn-more-button">
+            <h5>LEARN MORE</h5>
           </button>
-        </form>
-      </div>
+          <img src="./images/icon.png" alt="christmas-leaves" />
+        </header>
 
-      <img class="red-blink" src="./images/red_blink2.png" alt="red-blink" />
-      <div class="snow-pattern-1"></div>
-      <div class="snow-pattern-2"></div>
-      <img class="reindeer-image-1" src="./images/pic_02.png" alt="reindeer-image-1" />
-      <img class="reindeer-image-2" src="./images/pic_01.png" alt="reindeer-image-2" />
-    </section>
+        <img class="red-blink" src="./images/red_blink2.png" alt="red-blink" />
+        <div class="snow-pattern-1"></div>
+        <div class="snow-pattern-2"></div>
+        <img
+          class="reindeer-image-1"
+          src="./images/pic_02.png"
+          alt="reindeer-image-1"
+        />
+        <img
+          class="reindeer-image-2"
+          src="./images/pic_01.png"
+          alt="reindeer-image-2"
+        />
+      </section>
 
-    <section id="eighth">
-      <div class="section-content">
-        <div class="header-title">
-          <h4 class="section-title">ARE YOU INTERESTED?</h4>
-          <img src="./images/divider_green.png" alt="divider-white">
+      <section id="second">
+        <div class="section-content">
+          <h4 class="section-title odd-section-title">OUR HOT OFFER</h4>
+          <img src="./images/divider_green.png" alt="icon" />
+          <p class="odd-section-caption">
+            Check out our deals on limited products and make your loved ones
+            happy!
+          </p>
+
+          <div class="offers-container">
+            <div class="offer-container">
+              <img
+                class="offer-product"
+                src="./images/product_01_thumb.png"
+                alt="offer-product-1"
+              />
+              <p class="offer-name">SMARPHON 5C 16GB</p>
+              <h5 class="offer-price">$59.60</h5>
+              <button class="offer-buy-now">
+                <h5>BUY NOW</h5>
+              </button>
+            </div>
+            <div class="offer-container">
+              <img
+                class="offer-product"
+                src="./images/product_02_thumb.png"
+                alt="offer-product-2"
+              />
+              <p class="offer-name">MAKBOOK PRO 13"</p>
+              <h5 class="offer-price">$99.50</h5>
+              <button class="offer-buy-now">
+                <h5>BUY NOW</h5>
+              </button>
+            </div>
+            <div class="offer-container">
+              <img
+                class="offer-product"
+                src="./images/product_03_thumb.png"
+                alt="offer-product-3"
+              />
+              <p class="offer-name">IMAK 27"</p>
+              <h5 class="offer-price">$129.50</h5>
+              <button class="offer-buy-now">
+                <h5>BUY NOW</h5>
+              </button>
+            </div>
+          </div>
         </div>
-        <p class="section-caption">Get in touch with us</p>
 
-        <div class="contact-us-container">
-          <div class="contact-us-wrapper">
-            <img id="contact-us-1" src="./images/icon_mail_01.png" alt="">
+        <div class="odd-section-trees"></div>
+        <div class="odd-section-footer"></div>
+      </section>
 
-            <p>Sales: <span>sales@supersale.com</span></p>
-            <p>Support: <span>support@supersale.com</span></p>
+      <section id="third">
+        <div class="section-content">
+          <h4 class="section-title">PROMO VIDEO</h4>
+          <img src="./images/divider_white.png" alt="divider-white" />
+          <p class="section-caption">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+            quae, magni iure eum officiis, qui
+          </p>
+
+          <iframe
+            src="./video/sample.mp4"
+            title="Dummy Video"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <img class="red-blink" src="./images/red_blink2.png" alt="red-blink" />
+        <div class="snow-pattern-1"></div>
+        <div class="snow-pattern-2"></div>
+        <img
+          class="reindeer-image-1"
+          src="./images/pic_02.png"
+          alt="reindeer-image-1"
+        />
+        <img
+          class="reindeer-image-2"
+          src="./images/pic_01.png"
+          alt="reindeer-image-2"
+        />
+      </section>
+
+      <section id="fourth">
+        <div class="section-content">
+          <h4 class="section-title odd-section-title">ABOUT PRODUCT #1</h4>
+          <img src="./images/divider_green.png" alt="divider-green" />
+          <p class="odd-section-caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing.
+          </p>
+
+          <div class="about-product-img-container">
+            <img
+              class="about-product-img"
+              src="./images/product_01_preview_01.jpg"
+              alt="product-01-preview-01"
+            />
+            <img
+              class="about-product-img"
+              src="./images/product_01_preview_02.jpg"
+              alt="product-01-preview-02"
+            />
+            <img
+              class="about-product-img"
+              src="./images/product_01_preview_03.jpg"
+              alt="product-01-preview-03"
+            />
           </div>
 
-          <div class="contact-us-wrapper">
-            <img id="contact-us-2" src="./images/icon_call_01.png" alt="">
-
-            <p>Sales: <span>+1 123 456 7890</span></p>
-            <p>Support: <span>+1 123 456 9578</span></p>
-          </div>
-
-          <div class="contact-us-wrapper">
-            <img id="contact-us-3" src="./images/icon_address_01.png" alt="">
-
-            <p>Office: Unit C2, St.Vincent's Trading Est,</p>
-            <p>Feeder Road, London, UK</p>
+          <div class="about-product-caption">
+            <p class="about-product-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+              dolore, tenetur rerum accusamus qui molestiae! Cupiditate sed
+              magnam distinctio ex obcaecati eius incidunt beatae et autem minus
+              deleniti reiciendis ducimus facilis fugiat harum, ullam laborum
+              suscipit porro nam iste. Alias perferendis quibusdam possimus
+              dolore odio sed tempore dolorum nemo quasi!
+            </p>
+            <div class="offer-price-about">
+              <h6>$59.50</h6>
+              <button class="offer-buy-now">
+                <h5>BUY NOW</h5>
+              </button>
+            </div>
           </div>
         </div>
 
-        <div class="social-media-container">
-          <img id="social-media-fb" src="./images/icon_fb_01.png" alt="social-media-fb">
-          <img id="social-media-twitter" src="./images/icon_twitter_01.png" alt="social-media-twitter">
-          <img id="social-media-gplus" src="./images/icon_gplus_01.png" alt="social-media-gplus">
-          <img id="social-media-instagram" src="./images/icon_instagram_01.png" alt="social-media-instagram">
-          <img id="social-media-pinterest" src="./images/icon_pinterest_01.png" alt="social-media-pinterest">
-          <img id="social-media-tumblr" src="./images/icon_tumblr_01.png" alt="social-media-tumblr">
-          <img id="social-media-vimeo" src="./images/icon_vimeo_01.png" alt="social-media-vimeo">
+        <div class="odd-section-trees"></div>
+        <div class="odd-section-footer"></div>
+      </section>
+
+      <section id="fifth">
+        <div class="section-content">
+          <h4 class="section-title">ABOUT PRODUCT #2</h4>
+          <img src="./images/divider_green.png" alt="divider-green" />
+          <p class="section-caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing.
+          </p>
+
+          <div class="about-product-img-container">
+            <img
+              class="about-product-img"
+              src="./images/product_01_preview_01.jpg"
+              alt="product-01-preview-01"
+            />
+            <img
+              class="about-product-img"
+              src="./images/product_01_preview_02.jpg"
+              alt="product-01-preview-02"
+            />
+            <img
+              class="about-product-img"
+              src="./images/product_01_preview_03.jpg"
+              alt="product-01-preview-03"
+            />
+          </div>
+
+          <div class="about-product-caption">
+            <p class="about-product-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+              dolore, tenetur rerum accusamus qui molestiae! Cupiditate sed
+              magnam distinctio ex obcaecati eius incidunt beatae et autem minus
+              deleniti reiciendis ducimus facilis fugiat harum, ullam laborum
+              suscipit porro nam iste. Alias perferendis quibusdam possimus
+              dolore odio sed tempore dolorum nemo quasi!
+            </p>
+            <div class="offer-price-about">
+              <h6>$59.50</h6>
+              <button class="offer-buy-now">
+                <h5>BUY NOW</h5>
+              </button>
+            </div>
+          </div>
         </div>
 
-        <footer>
-          <p>© XMuse - Christmas Sale / Promo Landing Muse Template by Vinyjunkie</p>
-          <p>All rights reserved. You can buy this template</p>
-        </footer>
-      </div>
+        <img class="red-blink" src="./images/red_blink2.png" alt="red-blink" />
+        <div class="snow-pattern-1"></div>
+        <div class="snow-pattern-2"></div>
+        <img
+          class="reindeer-image-1"
+          src="./images/pic_02.png"
+          alt="reindeer-image-1"
+        />
+        <img
+          class="reindeer-image-2"
+          src="./images/pic_01.png"
+          alt="reindeer-image-2"
+        />
+      </section>
 
-      <div class="odd-section-trees"></div>
-    </section>
-  </main>
-</body>
+      <section id="sixth">
+        <div class="section-content">
+          <h4 class="section-title">ABOUT PRODUCT #3</h4>
+          <img src="./images/divider_green.png" alt="divider-green" />
+          <p class="section-caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing.
+          </p>
 
-<script src="js/index.js"></script>
+          <div class="about-product-img-container">
+            <img
+              class="about-product-img"
+              src="./images/product_01_preview_01.jpg"
+              alt="product-01-preview-01"
+            />
+            <img
+              class="about-product-img"
+              src="./images/product_01_preview_02.jpg"
+              alt="product-01-preview-02"
+            />
+            <img
+              class="about-product-img"
+              src="./images/product_01_preview_03.jpg"
+              alt="product-01-preview-03"
+            />
+          </div>
 
+          <div class="about-product-caption">
+            <p class="about-product-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+              dolore, tenetur rerum accusamus qui molestiae! Cupiditate sed
+              magnam distinctio ex obcaecati eius incidunt beatae et autem minus
+              deleniti reiciendis ducimus facilis fugiat harum, ullam laborum
+              suscipit porro nam iste. Alias perferendis quibusdam possimus
+              dolore odio sed tempore dolorum nemo quasi!
+            </p>
+            <div class="offer-price-about">
+              <h6>$59.50</h6>
+              <button class="offer-buy-now">
+                <h5>BUY NOW</h5>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="odd-section-trees"></div>
+        <div class="odd-section-footer"></div>
+      </section>
+
+      <section id="seventh">
+        <div class="section-content">
+          <h4 class="section-title">WANT MORE? SUBSCRIBE!</h4>
+          <img src="./images/divider_white.png" alt="divider-white" />
+          <p class="section-caption">And get latest amazing offers first</p>
+
+          <form action="">
+            <input type="text" placeholder="Enter Name" />
+            <input type="email" placeholder="Enter Email" />
+            <button class="offer-buy-now">
+              <h5>Submit</h5>
+            </button>
+          </form>
+        </div>
+
+        <img class="red-blink" src="./images/red_blink2.png" alt="red-blink" />
+        <div class="snow-pattern-1"></div>
+        <div class="snow-pattern-2"></div>
+        <img
+          class="reindeer-image-1"
+          src="./images/pic_02.png"
+          alt="reindeer-image-1"
+        />
+        <img
+          class="reindeer-image-2"
+          src="./images/pic_01.png"
+          alt="reindeer-image-2"
+        />
+      </section>
+
+      <section id="eighth">
+        <div class="section-content">
+          <div class="header-title">
+            <h4 class="section-title">ARE YOU INTERESTED?</h4>
+            <img src="./images/divider_green.png" alt="divider-white" />
+          </div>
+          <p class="section-caption">Get in touch with us</p>
+
+          <div class="contact-us-container">
+            <div class="contact-us-wrapper">
+              <img
+                id="contact-us-1"
+                src="./images/icon_mail_01.png"
+                alt="icon-mail-1"
+              />
+
+              <p>Sales: <span>sales@supersale.com</span></p>
+              <p>Support: <span>support@supersale.com</span></p>
+            </div>
+
+            <div class="contact-us-wrapper">
+              <img
+                id="contact-us-2"
+                src="./images/icon_call_01.png"
+                alt="icon-call-1"
+              />
+
+              <p>Sales: <span>+1 123 456 7890</span></p>
+              <p>Support: <span>+1 123 456 9578</span></p>
+            </div>
+
+            <div class="contact-us-wrapper">
+              <img
+                id="contact-us-3"
+                src="./images/icon_address_01.png"
+                alt="icon-address-1"
+              />
+
+              <p>Office: Unit C2, St.Vincent's Trading Est,</p>
+              <p>Feeder Road, London, UK</p>
+            </div>
+          </div>
+
+          <div class="social-media-container">
+            <img
+              id="social-media-fb"
+              src="./images/icon_fb_01.png"
+              alt="social-media-fb"
+            />
+            <img
+              id="social-media-twitter"
+              src="./images/icon_twitter_01.png"
+              alt="social-media-twitter"
+            />
+            <img
+              id="social-media-gplus"
+              src="./images/icon_gplus_01.png"
+              alt="social-media-gplus"
+            />
+            <img
+              id="social-media-instagram"
+              src="./images/icon_instagram_01.png"
+              alt="social-media-instagram"
+            />
+            <img
+              id="social-media-pinterest"
+              src="./images/icon_pinterest_01.png"
+              alt="social-media-pinterest"
+            />
+            <img
+              id="social-media-tumblr"
+              src="./images/icon_tumblr_01.png"
+              alt="social-media-tumblr"
+            />
+            <img
+              id="social-media-vimeo"
+              src="./images/icon_vimeo_01.png"
+              alt="social-media-vimeo"
+            />
+          </div>
+
+          <footer>
+            <p>
+              © XMuse - Christmas Sale / Promo Landing Muse Template by
+              Vinyjunkie
+            </p>
+            <p>All rights reserved. You can buy this template</p>
+          </footer>
+        </div>
+
+        <div class="odd-section-trees"></div>
+      </section>
+    </main>
+  </body>
+
+  <script src="js/index.js"></script>
 </html>
