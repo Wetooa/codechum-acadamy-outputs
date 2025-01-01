@@ -1,18 +1,18 @@
-/* Base styles */
+/* ase styles */
 :root {
   --primary-color: #f0f0f0;
-  --primary-foreground: #AD0101;
-  --secondary-foreground: #E9F8F9;
-  --primary-text-color: #FFFFFF;
-  --secondary-text-color: #00000F;
-  --tertiary-text-color: #A2DE4F;
-  --facebook-color: #3B5998;
-  --twitter-color: #1DA1F2;
-  --gplus-color: #DB4437;
-  --instagram-color: #E1306C;
-  --pinterest-color: #BD081C;
-  --tumblr-color: #35465C;
-  --vimeo-color: #1AB7EA;
+  --primary-foreground: #ad0101;
+  --secondary-foreground: #e9f8f9;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #00000f;
+  --tertiary-text-color: #a2de4f;
+  --facebook-color: #3b5998;
+  --twitter-color: #1da1f2;
+  --gplus-color: #db4437;
+  --instagram-color: #e1306c;
+  --pinterest-color: #bd081c;
+  --tumblr-color: #35465c;
+  --vimeo-color: #1ab7ea;
 }
 
 @font-face {
@@ -71,7 +71,7 @@ a {
   font-family: Raleway, sans-serif;
 }
 
-nav>a>img {
+nav > a > img {
   width: 12px;
   height: 12px;
 }
@@ -80,23 +80,23 @@ main {
   display: grid;
 }
 
-main> :nth-child(odd) {
+main > :nth-child(odd) {
   color: var(--primary-text-color);
   background-color: var(--primary-foreground);
   overflow-y: hidden;
 }
 
-main> :nth-child(even) {
+main > :nth-child(even) {
   color: var(--secondary-text-color);
   background-color: var(--secondary-foreground);
   z-index: 2;
 }
 
-main> :first-child {
+main > :first-child {
   justify-content: start;
 }
 
-main> :last-child {
+main > :last-child {
   justify-content: space-evenly;
   align-items: center;
 }

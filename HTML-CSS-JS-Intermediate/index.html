@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Catalog</h1>
+    </header>
+    <section class="filters">
+      <input type="text" id="search" placeholder="Search products..." />
+      <select id="category-filter">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="home">Home</option>
+      </select>
+      <select id="price-filter">
+        <option value="all">All Prices</option>
+        <option value="below-50">Below $50</option>
+        <option value="50-100">$50 - $100</option>
+        <option value="above-100">Above $100</option>
+      </select>
+    </section>
+    <section class="product-grid" id="product-grid">
+      <!-- Product cards will be injected here dynamically -->
+    </section>
+    <footer>
+      <p>© 2025 Product Catalog</p>
+    </footer>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
