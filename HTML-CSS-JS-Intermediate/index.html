@@ -3,33 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Catalog</title>
+    <title>ShopEase</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <h1>Product Catalog</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <h1><i class="fas fa-shopping-cart"></i> ShopEase</h1>
     </header>
-    <section class="filters">
-      <input type="text" id="search" placeholder="Search products..." />
-      <select id="category-filter">
-        <option value="all">All Categories</option>
-        <option value="electronics">Electronics</option>
-        <option value="clothing">Clothing</option>
-        <option value="home">Home</option>
-      </select>
-      <select id="price-filter">
-        <option value="all">All Prices</option>
-        <option value="below-50">Below $50</option>
-        <option value="50-100">$50 - $100</option>
-        <option value="above-100">Above $100</option>
-      </select>
-    </section>
-    <section class="product-grid" id="product-grid">
-      <!-- Product cards will be injected here dynamically -->
-    </section>
+    <div class="container">
+      <aside class="sidebar">
+        <section class="filters">
+          <h2>Filters</h2>
+          <input type="text" id="search" placeholder="Search products..." />
+          <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="home">Home</option>
+            <option value="beauty">Beauty</option>
+            <option value="sports">Sports</option>
+          </select>
+          <select id="price-filter">
+            <option value="all">All Prices</option>
+            <option value="below-50">Below $50</option>
+            <option value="50-100">$50 - $100</option>
+            <option value="100-200">$100 - $200</option>
+            <option value="above-200">Above $200</option>
+          </select>
+          <select id="rating-filter">
+            <option value="all">All Ratings</option>
+            <option value="4">4 Stars & Up</option>
+            <option value="3">3 Stars & Up</option>
+            <option value="2">2 Stars & Up</option>
+            <option value="1">1 Star & Up</option>
+          </select>
+          <select id="tag-filter">
+            <option value="all">All Tags</option>
+            <option value="new">New</option>
+            <option value="sale">Sale</option>
+            <option value="popular">Popular</option>
+          </select>
+        </section>
+        <button id="show-create-product">
+          <i class="fas fa-plus"></i> Create Product
+        </button>
+        <button id="toggle-filters">
+          <i class="fas fa-filter"></i> Toggle Filters
+        </button>
+      </aside>
+      <main>
+        <section class="sort-section">
+          <label for="sort-filter">Sort By:</label>
+          <select id="sort-filter">
+            <option value="default">Default</option>
+            <option value="price">Price</option>
+            <option value="rating">Rating</option>
+          </select>
+          <button id="sort-order"><i class="fas fa-sort-amount-up"></i></button>
+        </section>
+        <section class="product-grid" id="product-grid">
+          <!-- Product cards will be injected here dynamically -->
+        </section>
+        <section class="create-product hidden" id="create-product">
+          <h2>Create Product</h2>
+          <form id="create-product-form">
+            <input
+              type="text"
+              id="product-name"
+              placeholder="Product Name"
+              required
+            />
+            <input
+              type="number"
+              id="product-price"
+              placeholder="Product Price"
+              required
+            />
+            <select id="product-category">
+              <option value="electronics">Electronics</option>
+              <option value="clothing">Clothing</option>
+              <option value="home">Home</option>
+              <option value="beauty">Beauty</option>
+              <option value="sports">Sports</option>
+            </select>
+            <input
+              type="number"
+              id="product-rating"
+              placeholder="Product Rating"
+              min="1"
+              max="5"
+              required
+            />
+            <input
+              type="text"
+              id="product-tags"
+              placeholder="Product Tags (comma separated)"
+            />
+            <textarea
+              id="product-details"
+              placeholder="Product Details"
+              required
+            ></textarea>
+            <button type="submit">Add Product</button>
+          </form>
+        </section>
+      </main>
+    </div>
     <footer>
-      <p>© 2025 Product Catalog</p>
+      <p>© 2025 ShopEase</p>
     </footer>
     <script src="./scripts/index.js"></script>
   </body>
